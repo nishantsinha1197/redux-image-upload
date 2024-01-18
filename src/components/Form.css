@@ -1,0 +1,33 @@
+.user-card {
+    margin: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    color:red;
+    text-align: center;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    width: 18rem;
+    margin: 20px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+ .custom-file-upload{
+    margin-left: 90px;
+    margin-bottom: 10px;
+ }  
+ .username,.password{
+    margin-bottom: 10px;
+ }

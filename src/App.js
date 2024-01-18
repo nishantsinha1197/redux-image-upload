@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import Form from './components/Form';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import userReducer from './reducer/reducer';
 
 function App() {
+  // Create the Redux store with the root reducer
+  const store = createStore(userReducer);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Provider store={store}>
+        <Form />
+      </Provider>
     </div>
   );
 }
